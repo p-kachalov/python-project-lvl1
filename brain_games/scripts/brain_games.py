@@ -1,11 +1,11 @@
-"""Main module of project."""
-from brain_games.scripts.cli import welcome_user
+"""Script for launch Brain Games."""
+from brain_games.scripts.cli import get_introduction
 
 
 def main():
-    """Entry point with simple welcome."""
+    """Entry point to Brain Games."""
     print('Welcome to the Brain Games!')
-    welcome_user()
+    get_introduction()
 
 
 if __name__ == '__main__':
