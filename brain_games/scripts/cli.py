@@ -21,7 +21,7 @@ def get_introduction() -> str:
     Returns:
         str
     """
-    name = prompt.string('May I have your name? ')
+    name = prompt.string('\nMay I have your name? ')
 
     print('Hello, {user}!'.format(user=name), '\n')
 

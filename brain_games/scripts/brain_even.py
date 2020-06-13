@@ -1,14 +1,11 @@
 """Script for launch brain even game."""
-from brain_games.brain_even import game
+from brain_games.games import brain_even
 from brain_games.scripts.brain_games import main
 
 
 def play():
     """Entry point to brain even game."""
-    game_rules = game.get_rules()
-    game_launcher = game.start
-
-    main(game_rules, game_launcher)
+    main(rules=brain_even.get_rules(), get_task=brain_even.get_task)
 
 
 if __name__ == '__main__':
