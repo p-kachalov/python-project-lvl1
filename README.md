@@ -7,4 +7,5 @@ Learning project for Hexlet
 [![Build Status](https://travis-ci.org/p-kachalov/python-project-lvl1.svg?branch=master)](https://travis-ci.org/p-kachalov/python-project-lvl1)
 
 ### asciinema:
-[brain-even](https://asciinema.org/a/E5gmnq0HOoW9ZkWoAED13zMfB)
+* [brain-even](https://asciinema.org/a/E5gmnq0HOoW9ZkWoAED13zMfB)
+* [brain-calc](https://asciinema.org/a/YMySO8YBC6c9abIctBnhfO2Qx)
