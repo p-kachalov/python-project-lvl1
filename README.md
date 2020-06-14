@@ -9,3 +9,4 @@ Learning project for Hexlet
 ### asciinema:
 * [brain-even](https://asciinema.org/a/E5gmnq0HOoW9ZkWoAED13zMfB)
 * [brain-calc](https://asciinema.org/a/YMySO8YBC6c9abIctBnhfO2Qx)
+* [brain-gcd](https://asciinema.org/a/ehZCPjKB7zdfH3cMDsZ9vWZDW)
