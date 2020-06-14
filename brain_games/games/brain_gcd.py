@@ -1,6 +1,6 @@
 """Brain GCD game logic."""
-import random
 import math
+import random
 
 MIN_NUMBER = 1
 MAX_NUMBER = 9
