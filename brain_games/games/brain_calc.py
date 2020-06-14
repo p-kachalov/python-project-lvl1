@@ -1,4 +1,4 @@
-"""Brain Even game logic."""
+"""Brain Calc game logic."""
 import random
 
 MIN_NUMBER = 0
