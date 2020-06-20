@@ -11,3 +11,4 @@ Learning project for Hexlet
 * [brain-calc](https://asciinema.org/a/YMySO8YBC6c9abIctBnhfO2Qx)
 * [brain-gcd](https://asciinema.org/a/ehZCPjKB7zdfH3cMDsZ9vWZDW)
 * [brain-progression](https://asciinema.org/a/QMv7dd9nbb7rwr8XG1k6uzY1O)
+* [brain-prime](https://asciinema.org/a/Jf5J5JEIqmiErZIxXTlGvjSIf)
