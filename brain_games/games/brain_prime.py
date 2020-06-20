@@ -1,5 +1,4 @@
 """Brain prime game logic."""
-import math
 import random
 
 MIN_NUMBER = 1
