@@ -6,14 +6,7 @@ MIN_NUMBER = 1
 MAX_NUMBER = 9
 
 
-def get_rules() -> str:
-    """
-    Return game rules.
-
-    Returns:
-        str
-    """
-    return 'Find the greatest common divisor of given numbers.'
+RULES = 'Find the greatest common divisor of given numbers.'
 
 
 def get_task() -> dict:

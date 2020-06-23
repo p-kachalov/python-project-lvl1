@@ -5,14 +5,7 @@ MIN_NUMBER = 0
 MAX_NUMBER = 100
 
 
-def get_rules() -> str:
-    """
-    Return game rules.
-
-    Returns:
-        str
-    """
-    return 'Answer "yes" if number even otherwise answer "no".'
+RULES = 'Answer "yes" if number even otherwise answer "no".'
 
 
 def get_task() -> dict:

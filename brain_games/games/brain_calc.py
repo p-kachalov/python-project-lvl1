@@ -4,15 +4,7 @@ import random
 MIN_NUMBER = 0
 MAX_NUMBER = 10
 
-
-def get_rules() -> str:
-    """
-    Return game rules.
-
-    Returns:
-        str
-    """
-    return 'What is the result of the expression?'
+RULES = 'What is the result of the expression?'
 
 
 def get_task() -> dict:

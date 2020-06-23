@@ -5,14 +5,7 @@ MIN_NUMBER = 1
 MAX_NUMBER = 100
 
 
-def get_rules() -> str:
-    """
-    Return game rules.
-
-    Returns:
-        str
-    """
-    return 'Answer "yes" if given number is prime. Otherwise answer "no".'
+RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number: int) -> bool:

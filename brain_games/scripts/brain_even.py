@@ -1,12 +1,12 @@
 """Script for launch brain even game."""
 from brain_games.games import brain_even
-from brain_games.scripts.brain_games import main
+from brain_games.flow.game import play
 
 
-def play():
+def main():
     """Entry point to brain even game."""
-    main(rules=brain_even.get_rules(), get_task=brain_even.get_task)
+    play(brain_even)
 
 
 if __name__ == '__main__':
-    play()
+    main()

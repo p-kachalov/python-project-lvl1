@@ -5,15 +5,7 @@ PROGRESSIONN_LEN = 10
 MIN_STEP = 1
 MAX_STEP = 10
 
-
-def get_rules() -> str:
-    """
-    Return game rules.
-
-    Returns:
-        str
-    """
-    return 'What number is missing in the progression?'
+RULES = 'What number is missing in the progression?'
 
 
 def make_progression() -> list:

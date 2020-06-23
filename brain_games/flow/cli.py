@@ -1,29 +1,27 @@
-"""Module for cli functions."""
+"""Functions for interacting with the user."""
+
 import prompt
 
 
-def show_welcome_message(rules=None):
+def greeting_user(game_rules=None) -> str:
     """
-    Show welcome message and game rules (if it's present).
+    User greetings.
+
+    Show welcome message and game rules (if it's present),
+    and request user name.
 
     Args:
-        rules: game rules
-    """
-    print('Welcome to the Brain Games!')
-    if rules:
-        print(rules, '\n')
-
-
-def get_introduction() -> str:
-    """
-    Request user self introduction.
+        game_rules: game rules
 
     Returns:
-        str
+        str: user name
     """
-    name = prompt.string('\nMay I have your name? ')
+    print('Welcome to the Brain Games!')
+    if game_rules:
+        print('{0}\n'.format(game_rules))
 
-    print('Hello, {user}!'.format(user=name), '\n')
+    name = prompt.string('\nMay I have your name? ')
+    print('Hello, {user}!\n'.format(user=name))
 
     return name
 
@@ -36,7 +34,7 @@ def get_user_answer(question: str) -> str:
         question: question to answer
 
     Returns:
-        str
+        str: user answer
     """
     print(question)
     return prompt.string('Your answer: ')
