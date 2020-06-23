@@ -1,6 +1,6 @@
 """Script for launch brain even game."""
-from brain_games.games import brain_calc
 from brain_games.flow.game import play
+from brain_games.games import brain_calc
 
 
 def main():

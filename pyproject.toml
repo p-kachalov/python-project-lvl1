@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "p-kachalov_brain_games"
-version = "1.5.2"
+version = "1.5.3"
 description = "A small set of simple console games."
 authors = ["Pavel Kachalov <pa.kachalov@gmail.com>"]
 repository = "https://github.com/p-kachalov/python-project-lvl1"
