@@ -22,7 +22,7 @@ def is_prime(number: int) -> bool:
     if number < 2:
         return False
 
-    for divider in range(2, number):
+    for divider in range(2, number // 2):
         if (number % divider) == 0:
             return False
 
