@@ -1,10 +1,12 @@
 """Script for launch Brain Games."""
-from brain_games.flow.cli import greeting_user
+import prompt
 
 
 def main():
     """Entry point to Brain Games."""
-    greeting_user()
+    print('Welcome to the Brain Games!')
+    name = prompt.string('\nMay I have your name? ')
+    print('Hello, {user}!\n'.format(user=name))
 
 
 if __name__ == '__main__':

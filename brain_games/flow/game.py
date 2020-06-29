@@ -1,5 +1,5 @@
 """Common game logic."""
-from brain_games.flow import cli
+import prompt
 
 NUMBER_OF_ROUNDS = 3
 
@@ -11,20 +11,26 @@ def play(game):
     Args:
         game: game to play
     """
-    name = cli.greeting_user(game_rules=game.DESCRIPTION)
+    print('Welcome to the Brain Games!')
+    print('{0}\n'.format(game.DESCRIPTION))
+
+    name = prompt.string('\nMay I have your name? ')
+    print('Hello, {user}!\n'.format(user=name))
 
     won_rounds = 0
     while won_rounds < NUMBER_OF_ROUNDS:
         question, correct_answer = game.get_task()
-        user_answer = cli.get_user_answer(question=question)
+        print(question)
+        user_answer = prompt.string('Your answer: ')
 
         if user_answer != correct_answer:
-            cli.report_on_wrong_answer(
-                name=name, answer=user_answer, correct_answer=correct_answer,
-            )
+            print("'{0}' is wrong answer ;(. Correct answer was '{1}'".format(
+                user_answer, correct_answer,
+            ))
+            print("Let's try again, {0}!".format(name))
             return
 
-        cli.report_on_correct_answer()
+        print('Correct!')
         won_rounds += 1
 
-    cli.congrats_user_on_win(name=name)
+    print('Congratulations, {0}!'.format(name))

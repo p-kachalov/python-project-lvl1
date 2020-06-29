@@ -21,8 +21,8 @@ def make_progression(min_step, max_step, progression_len) -> list:
     Returns:
         a list of numbers an arithmetic progression
     """
-    start = random.randint(min_step, max_step)  # noqa: S311
-    step = random.randint(min_step, max_step)  # noqa: S311
+    start = random.randint(min_step, max_step)
+    step = random.randint(min_step, max_step)
 
     return [num * step for num in range(start, start+progression_len)]
 
@@ -39,7 +39,7 @@ def get_task() -> Tuple[str, str]:
         max_step=MAX_STEP,
         progression_len=PROGRESSIONN_LEN,
     )
-    index = random.randint(0, PROGRESSIONN_LEN)  # noqa: S311
+    index = random.randrange(0, PROGRESSIONN_LEN)
     hide_number = progression[index]
     progression[index] = '...'
 

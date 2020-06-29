@@ -16,7 +16,7 @@ def get_task() -> Tuple[str, str]:
     Returns:
         dict: dict with question and answer
     """
-    number = randint(MIN_NUMBER, MAX_NUMBER)  # noqa: S311
+    number = randint(MIN_NUMBER, MAX_NUMBER)
     question = str(number)
     answer = 'no' if number % 2 else 'yes'
 

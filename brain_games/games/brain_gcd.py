@@ -17,9 +17,9 @@ def get_task() -> Tuple[str, str]:
     Returns:
         dict: dict with question and answer
     """
-    multiplier = random.randint(MIN_NUMBER, MAX_NUMBER)  # noqa: S311
-    number1 = multiplier * random.randint(MIN_NUMBER, MAX_NUMBER)  # noqa: S311
-    number2 = multiplier * random.randint(MIN_NUMBER, MAX_NUMBER)  # noqa: S311
+    multiplier = random.randint(MIN_NUMBER, MAX_NUMBER)
+    number1 = multiplier * random.randint(MIN_NUMBER, MAX_NUMBER)
+    number2 = multiplier * random.randint(MIN_NUMBER, MAX_NUMBER)
 
     question = '{number1} {number2}'.format(
         number1=number1,

@@ -36,7 +36,7 @@ def get_task() -> Tuple[str, str]:
     Returns:
         dict: dict with question and answer
     """
-    number = random.randint(MIN_NUMBER, MAX_NUMBER)  # noqa: S311
+    number = random.randint(MIN_NUMBER, MAX_NUMBER)
 
     question = str(number)
 
