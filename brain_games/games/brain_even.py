@@ -6,7 +6,7 @@ MIN_NUMBER = 0
 MAX_NUMBER = 100
 
 
-RULES = 'Answer "yes" if number even otherwise answer "no".'
+DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
 
 
 def get_task() -> Tuple[str, str]:

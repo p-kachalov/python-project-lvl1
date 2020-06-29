@@ -11,7 +11,7 @@ def play(game):
     Args:
         game: game to play
     """
-    name = cli.greeting_user(game_rules=game.RULES)
+    name = cli.greeting_user(game_rules=game.DESCRIPTION)
 
     won_rounds = 0
     while won_rounds < NUMBER_OF_ROUNDS:

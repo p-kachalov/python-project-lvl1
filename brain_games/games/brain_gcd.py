@@ -7,7 +7,7 @@ MIN_NUMBER = 1
 MAX_NUMBER = 9
 
 
-RULES = 'Find the greatest common divisor of given numbers.'
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
 def get_task() -> Tuple[str, str]:

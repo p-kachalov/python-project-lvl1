@@ -5,7 +5,7 @@ from typing import Tuple
 MIN_NUMBER = 0
 MAX_NUMBER = 10
 
-RULES = 'What is the result of the expression?'
+DESCRIPTION = 'What is the result of the expression?'
 
 
 def get_task() -> Tuple[str, str]:

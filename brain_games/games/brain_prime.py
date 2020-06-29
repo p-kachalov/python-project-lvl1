@@ -6,7 +6,7 @@ MIN_NUMBER = 1
 MAX_NUMBER = 100
 
 
-RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number: int) -> bool:

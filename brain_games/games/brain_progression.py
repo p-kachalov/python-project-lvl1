@@ -6,7 +6,7 @@ PROGRESSIONN_LEN = 10
 MIN_STEP = 1
 MAX_STEP = 10
 
-RULES = 'What number is missing in the progression?'
+DESCRIPTION = 'What number is missing in the progression?'
 
 
 def make_progression() -> list:
