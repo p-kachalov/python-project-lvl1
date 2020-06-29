@@ -10,6 +10,22 @@ MAX_NUMBER = 9
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
+def calc_gcd(number1: int, number2: int) -> int:
+    """
+    Calculate gcd of two numbers.
+
+    Args:
+        number1: first number
+        number2: second number
+
+    Returns:
+        int: gcd of numbers
+    """
+    while number2:
+        number1, number2 = number2, number1 % number2
+    return number1
+
+
 def get_task() -> Tuple[str, str]:
     """
     Generate new question and right answer for calc game.
