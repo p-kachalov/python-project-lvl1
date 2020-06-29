@@ -1,5 +1,6 @@
 """Brain Calc game logic."""
 import random
+from typing import Tuple
 
 MIN_NUMBER = 0
 MAX_NUMBER = 10
@@ -7,7 +8,7 @@ MAX_NUMBER = 10
 RULES = 'What is the result of the expression?'
 
 
-def get_task() -> dict:
+def get_task() -> Tuple[str, str]:
     """
     Generate new question and right answer for calc game.
 
@@ -26,4 +27,4 @@ def get_task() -> dict:
 
     answer = str(eval(question))  # noqa: S307 WPS421
 
-    return {'question': question, 'answer': answer}
+    return question, answer

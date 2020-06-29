@@ -1,5 +1,6 @@
 """Brain prime game logic."""
 import random
+from typing import Tuple
 
 MIN_NUMBER = 1
 MAX_NUMBER = 100
@@ -28,7 +29,7 @@ def is_prime(number: int) -> bool:
     return True
 
 
-def get_task() -> dict:
+def get_task() -> Tuple[str, str]:
     """
     Generate new question and right answer for calc game.
 
@@ -41,4 +42,4 @@ def get_task() -> dict:
 
     answer = 'yes' if is_prime(number) else 'no'
 
-    return {'question': question, 'answer': answer}
+    return question, answer

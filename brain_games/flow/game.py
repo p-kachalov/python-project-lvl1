@@ -15,12 +15,12 @@ def play(game):
 
     won_rounds = 0
     while won_rounds < NUMBER_OF_ROUNDS:
-        task = game.get_task()
-        user_answer = cli.get_user_answer(question=task['question'])
+        question, correct_answer = game.get_task()
+        user_answer = cli.get_user_answer(question=question)
 
-        if user_answer != task['answer']:
+        if user_answer != correct_answer:
             cli.report_on_wrong_answer(
-                name=name, answer=user_answer, correct_answer=task['answer'],
+                name=name, answer=user_answer, correct_answer=correct_answer,
             )
             return
 

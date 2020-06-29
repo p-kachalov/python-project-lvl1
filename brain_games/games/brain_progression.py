@@ -1,5 +1,6 @@
 """Brain progression game logic."""
 import random
+from typing import Tuple
 
 PROGRESSIONN_LEN = 10
 MIN_STEP = 1
@@ -21,7 +22,7 @@ def make_progression() -> list:
     return [num * step for num in range(start, start+PROGRESSIONN_LEN)]
 
 
-def get_task() -> dict:
+def get_task() -> Tuple[str, str]:
     """
     Generate new question and right answer for calc game.
 
@@ -39,4 +40,4 @@ def get_task() -> dict:
 
     answer = str(hide_number)
 
-    return {'question': question, 'answer': answer}
+    return question, answer

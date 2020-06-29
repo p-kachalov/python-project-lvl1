@@ -1,6 +1,7 @@
 """Brain GCD game logic."""
 import math
 import random
+from typing import Tuple
 
 MIN_NUMBER = 1
 MAX_NUMBER = 9
@@ -9,7 +10,7 @@ MAX_NUMBER = 9
 RULES = 'Find the greatest common divisor of given numbers.'
 
 
-def get_task() -> dict:
+def get_task() -> Tuple[str, str]:
     """
     Generate new question and right answer for calc game.
 
@@ -27,4 +28,4 @@ def get_task() -> dict:
 
     answer = str(math.gcd(number1, number2))
 
-    return {'question': question, 'answer': answer}
+    return question, answer
